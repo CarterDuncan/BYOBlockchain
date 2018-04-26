@@ -9,19 +9,13 @@ def proof_of_work(previous_proof, previous_hash):
     - Find a number p' such that hash(p, p') satisfies a valid condition
     where p is the previous proof and p' is the new proof
     :param previous_proof: <int>
-    :param previous_hash: <string> the has of the previous block is included
+    :param previous_hash: <string> the hash of the previous block is included
     so that proofs are tied to transaction history. Transaction history cannot
     be simply re-written, block hashes recomputed, and proofs re-used when
     the transaction history is tied to the proof computation through the hash
     of the previous block
     :return: <int>
     """
-
-    proof = 0
-    while valid_proof(previous_proof, previous_hash, proof) is False:
-        proof += 1
-
-    return proof
 
 
 def valid_proof(previous_proof, previous_hash, proof):
@@ -34,7 +28,3 @@ def valid_proof(previous_proof, previous_hash, proof):
     :param proof: <int> current_proof
     :return: <bool> True if correct, False if not
     """
-
-    guess = f'{previous_proof}{previous_hash}{proof}'.encode()
-    guess_hash = hashlib.sha256(guess).hexdigest()
-    return guess_hash[:DIFFICULTY] == '0000'
