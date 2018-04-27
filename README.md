@@ -1,11 +1,11 @@
 # BYOBlockchain
 A Proof-of-Work distributed ledger experiment.
 
-##Before cloning the repo,
+## Before cloning the repo,
 *`brew install python3`
 *`pip3 install virtualenv`
 
-##After cloning the repo, go into the repo folder and run...
+## After cloning the repo, go into the repo folder and run...
 Build a virtual environment to work in
 * `virtualenv -p python3 py3_env`
 * `py3_env/bin/pip3 install -r requirements.txt`
