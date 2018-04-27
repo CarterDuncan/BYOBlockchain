@@ -2,8 +2,8 @@
 A Proof-of-Work distributed ledger experiment.
 
 ## Before cloning the repo,
-*`brew install python3`
-*`pip3 install virtualenv`
+* `brew install python3`
+* `pip3 install virtualenv`
 
 ## After cloning the repo, go into the repo folder and run...
 Build a virtual environment to work in
