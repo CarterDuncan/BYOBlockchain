@@ -20,7 +20,5 @@ Deactivate the virtual environment by running
 
 Now run `which python3` again, you should see a path that looks like `/usr/local/bin/python3`
 
-To test, run 2 nodes locally using `python server.py 5000` `python server.py 5001`
-
+Don't worry about the URL below, we'll use it later
 Use [this Postman collection](https://www.getpostman.com/collections/08f4b1a53dc757bb1c6a) to register the nodes with each other, send transactions, mine blocks, and more
-
